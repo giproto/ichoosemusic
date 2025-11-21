@@ -1,1 +1,50 @@
+.menu-bar
+{
+    display: flex;
+    padding: 6px;
+    box-sizing: border-box;
+    align-items: center;
+    gap: 20px;
+
+    .logo-image
+    {
+        width: 80px;
+    }
+
+    .search-input-container
+    {
+        position: relative;
+    
+        $background-color:#111211;
+        $input-color: #a6b6f8;
+
+        .search-input
+        {
+            width: 500px;
+            height: 30px;
+            background-color: $input-color;
+            border: solid 1px $background-color;
+            border-radius: 15px;
+            padding-left: 32px;
+        }
+
+        .search-icon
+        {
+            color: $background-color;
+            position: absolute;
+            top: 8px;
+            left: 6px;
+        }
+    }
+}
+
+.container-music-cards
+{
+    display: flex;
+    margin-top: 30px;
+    gap: 36px;
+    padding: 12px 36px;
+    box-sizing: border-box;
+    overflow-x: scroll;
+}
 
