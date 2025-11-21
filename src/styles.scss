@@ -1,6 +1,23 @@
+:root
+{
+    // Primary
+    --primary: #00bf63;
+
+    // Background
+    --background-page: #111211;
+    --background-card-hover: #232323;
+
+    // Input
+    --background-input: #a6b6f8;
+
+    // Variaveis
+    --transition: 0.2s ease-in-out;
+}
+
 p, h1, h2, h3, h4, h5, h6, span
 {
     margin: 0;
+    color:white;
 }
 
 body

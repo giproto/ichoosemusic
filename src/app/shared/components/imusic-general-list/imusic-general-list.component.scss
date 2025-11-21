@@ -1,0 +1,19 @@
+.container-music-cards
+{
+    margin-top: 32px;
+
+    .general-music-title
+    {
+        margin-left: 44px;
+        margin-bottom: 12px;
+    }
+
+    .imusic-card
+    {
+        display: flex;
+        gap: 36px;
+        padding: 12px 36px;
+        box-sizing: border-box;
+        overflow-x: scroll;
+    }
+}

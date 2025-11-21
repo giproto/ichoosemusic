@@ -8,43 +8,30 @@
 
     .logo-image
     {
-        width: 80px;
+        width: 100px;
     }
 
     .search-input-container
     {
         position: relative;
-    
-        $background-color:#111211;
-        $input-color: #a6b6f8;
 
         .search-input
         {
             width: 500px;
-            height: 30px;
-            background-color: $input-color;
-            border: solid 1px $background-color;
+            height: 40px;
+            background-color: var(--background-input);
+            border: solid 1px var(--background-page);
             border-radius: 15px;
             padding-left: 32px;
         }
 
         .search-icon
         {
-            color: $background-color;
+            color: var(--background-page);
             position: absolute;
-            top: 8px;
+            top: 12px;
             left: 6px;
         }
     }
-}
-
-.container-music-cards
-{
-    display: flex;
-    margin-top: 30px;
-    gap: 36px;
-    padding: 12px 36px;
-    box-sizing: border-box;
-    overflow-x: scroll;
 }
 

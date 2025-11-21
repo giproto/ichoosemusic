@@ -1,7 +1,49 @@
 .container-music-cards
 {
-    .artist-image
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    transition: var(--transition);
+    cursor: pointer;
+
+    &:hover
     {
-        width: 150px;
+        transform: scale(1.1);
+        background-color: var(--background-card-hover);
+
+        .container-album
+        {
+            .play-card-btn
+            {
+                opacity: 1;
+            }
+        }
+    }
+
+    .container-album
+    {
+        position: relative;
+        margin-bottom: 8px;
+
+        .artist-image
+        {
+            width: 150px;
+            border-radius: 8px;
+        }
+    
+        .play-card-btn
+        {
+            background-color: var(--primary);
+            width: 45px;
+            height: 45px;
+            border: solid 2px black;
+            border-radius: 25px;
+            position: absolute;
+            bottom: 12px;
+            right: 12px;
+            opacity: 0;
+            cursor: pointer;
+            transition: var(--transition);
+        }    
     }
 }

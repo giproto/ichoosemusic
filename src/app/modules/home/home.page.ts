@@ -3,12 +3,13 @@ import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { IMusicCard } from "../../shared/components/imusic-card/imusic-card.component";
+import { IMusicGeneralList } from "../../shared/components/imusic-general-list/imusic-general-list.component";
 
 @Component({
     selector: 'home-page',
     templateUrl: 'home.page.html',
     styleUrl: 'home.page.scss',
-    imports: [CommonModule, FontAwesomeModule, IMusicCard]
+    imports: [CommonModule, FontAwesomeModule, IMusicGeneralList]
 })
 
 export class HomePage
