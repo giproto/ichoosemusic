@@ -4,15 +4,29 @@
     <!-- Título de gêneros musicais -->
     <h1 class="general-music-title">{{title()}}</h1>
     
-    <!-- Cards de álbuns -->
-    <div class="imusic-card">
-        <imusic-card />
-        <imusic-card />
-        <imusic-card />
-        <imusic-card />
-        <imusic-card />
-        <imusic-card />
-        <imusic-card />
-        <imusic-card />
+    <!-- Container com scroll e setas -->
+    <div class="scroll-container">
+        
+        <!-- Cards de álbuns -->
+        <div class="imusic-card" #scrollElement>
+            <imusic-card />
+            <imusic-card />
+            <imusic-card />
+            <imusic-card />
+            <imusic-card />
+            <imusic-card />
+            <imusic-card />
+            <imusic-card />
+        </div>
+
+        <!-- Seta para a esquerda -->
+        <button class="scroll-arrow scroll-arrow-left" (click)="scrollLeft()">  
+            <fa-icon [icon]="iconArrowLeft" />
+        </button>
+
+        <!-- Seta para a direita -->
+        <button class="scroll-arrow scroll-arrow-right" (click)="scrollRight()">
+            <fa-icon [icon]="iconArrowRight" />
+        </button>
     </div>
 </div>

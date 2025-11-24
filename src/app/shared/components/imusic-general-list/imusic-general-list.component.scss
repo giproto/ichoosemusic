@@ -8,12 +8,63 @@
         margin-bottom: 12px;
     }
 
-    .imusic-card
+    .scroll-container
     {
-        display: flex;
-        gap: 36px;
-        padding: 12px 36px;
-        box-sizing: border-box;
-        overflow-x: scroll;
+        position: relative;
+
+        .imusic-card
+        {
+            display: flex;
+            gap: 36px;
+            padding: 12px 36px;
+            box-sizing: border-box;
+            overflow-x: hidden;
+            scrollbar-width: thin;
+        }
+
+        .scroll-arrow
+        {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+            transition: all 0.3s ease;
+            color: white;
+
+            &:hover
+            {
+                background-color: rgba(0, 0, 0, 0.8);
+                transform: translateY(-50%) scale(1.1);
+            }
+
+            &:active
+            {
+                transform: translateY(-50%) scale(0.95);
+            }
+
+            fa-icon
+            {
+                font-size: 18px;
+            }
+        }
+
+        .scroll-arrow-left
+        {
+            left: 14px;
+        }
+
+        .scroll-arrow-right
+        {
+            right: 14px;
+        }
     }
 }
